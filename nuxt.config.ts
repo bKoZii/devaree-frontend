@@ -18,6 +18,11 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     },
   },
+  runtimeConfig: {
+    app: {
+      liffId: process.env.NUXT_LIFF_ID,
+    },
+  },
   compatibilityDate: '2025-01-10',
   eslint: {
     config: {
